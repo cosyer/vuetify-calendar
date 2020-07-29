@@ -16,49 +16,49 @@ export default {
       noTitle: '(无题)'
     },
     patterns: {
-      lastDay:        (day) => 'Last day of the month',
-      lastDayOfMonth: (day) => 'Last day of ' + day.format('MMMM'),
-      lastWeekday:    (day) => 'Last ' + day.format('dddd') + ' in ' + day.format('MMMM')
+      lastDay:        (day) => '月的最后一天',
+      lastDayOfMonth: (day) => day.format('MMMM') + '最后一天',
+      lastWeekday:    (day) => '上' + day.format('dddd') + '周' + day.format('MMMM')
     },
     colors: [
-      { text: 'Red' },
-      { text: 'Pink' },
-      { text: 'Purple' },
-      { text: 'Deep Purple' },
-      { text: 'Indigo' },
-      { text: 'Blue' },
-      { text: 'Glue' },
-      { text: 'Light Blue' },
-      { text: 'Cyan' },
-      { text: 'Teal' },
-      { text: 'Green' },
-      { text: 'Light Green' },
-      { text: 'Lime' },
-      { text: 'Yellow' },
-      { text: 'Amber' },
-      { text: 'Orange' },
-      { text: 'Deep Orange' },
-      { text: 'Brown' },
-      { text: 'Blue Gray' },
-      { text: 'Gray' },
-      { text: 'Black' }
+      { text: '红' },
+      { text: '粉红' },
+      { text: '紫' },
+      { text: '深紫' },
+      { text: '靛蓝' },
+      { text: '蓝' },
+      { text: '胶水色' },
+      { text: '浅蓝' },
+      { text: '青' },
+      { text: '墨绿' },
+      { text: '绿' },
+      { text: '浅绿' },
+      { text: '石灰色' },
+      { text: '黄' },
+      { text: '琥珀色' },
+      { text: '橙' },
+      { text: '深橙' },
+      { text: '褐色' },
+      { text: '蓝灰' },
+      { text: '棕色' },
+      { text: '黑色' }
     ],
     icons: [
-      { text: 'Alarm' },
-      { text: 'Star' },
-      { text: 'Love' },
-      { text: 'Action' },
-      { text: 'Assignment' },
-      { text: 'Warning' },
-      { text: 'Money' },
-      { text: 'Charge' },
-      { text: 'Home' },
-      { text: 'Play' },
-      { text: 'Email' },
-      { text: 'Phone' },
-      { text: 'Chart' },
-      { text: 'Biking' },
-      { text: 'Travel' }
+      { text: '警报' },
+      { text: '星' },
+      { text: '喜欢' },
+      { text: '操作' },
+      { text: '安排' },
+      { text: '警告' },
+      { text: '钱' },
+      { text: '充电' },
+      { text: '家' },
+      { text: '游玩' },
+      { text: '邮箱' },
+      { text: '手机' },
+      { text: '图标' },
+      { text: '骑自行车' },
+      { text: '旅行' }
     ],
     defaults: {
       dsDay: {
@@ -68,12 +68,12 @@ export default {
       },
       dsCalendarApp: {
         types: [
-          { label: 'Day' },
-          { label: 'Week' },
-          { label: 'Month' },
-          { label: 'Year' },
-          { label: 'Schedule' },
-          { label: '4 days' }
+          { label: '天' },
+          { label: '周' },
+          { label: '月' },
+          { label: '年' },
+          { label: '日程表' },
+          { label: '4天' }
         ],
         formats: {
           today: 'dddd, MMMM D',
@@ -82,14 +82,14 @@ export default {
         labels: {
           next: (type) => type ? 'Next ' + type.label.toLowerCase() : 'Next',
           prev: (type) => type ? 'Previous ' + type.label.toLowerCase() : 'Previous',
-          moveCancel: 'Cancel move',
-          moveSingleEvent: 'Move event',
-          moveOccurrence: 'Move just this event occurrence',
-          moveAll: 'Move all event occurrences',
-          moveDuplicate: 'Add event occurrence',
-          promptConfirm: 'Yes',
-          promptCancel: 'No',
-          today: 'TODAY'
+          moveCancel: '取消移动',
+          moveSingleEvent: '移动事件',
+          moveOccurrence: '移动目前仅发生的事件',
+          moveAll: '移动所有发生的事件',
+          moveDuplicate: '添加发生的事件',
+          promptConfirm: '确定',
+          promptCancel: '取消',
+          today: '今天'
         }
       },
       dsAgendaEvent: {
@@ -100,21 +100,21 @@ export default {
           time:       'h:mm a'
         },
         labels: {
-          allDay:   'All day',
-          options:  'Options',
-          close:    'Close',
-          day:      ['day', 'days'],
-          days:     ['day', 'days'],
-          minute:   ['minute', 'minutes'],
-          minutes:  ['minute', 'minutes'],
-          hour:     ['hour', 'hours'],
-          hours:    ['hour', 'hours'],
-          week:     ['week', 'weeks'],
-          weeks:    ['week', 'weeks'],
-          second:   ['second', 'seconds'],
-          seconds:  ['second', 'seconds'],
-          busy:     'Busy',
-          free:     'Free'
+          allDay:   '全天',
+          options:  '操作',
+          close:    '关闭',
+          day:      ['天', '天'],
+          days:     ['天', '天'],
+          minute:   ['分钟', '分钟'],
+          minutes:  ['分钟', '分钟'],
+          hour:     ['小时', '小时'],
+          hours:    ['小时', '小时'],
+          week:     ['周', '周'],
+          weeks:    ['周', '周'],
+          second:   ['秒', '秒'],
+          seconds:  ['秒', '秒'],
+          busy:     '忙碌',
+          free:     '空闲'
         }
       },
       dsCalendarEventChip: {
@@ -129,21 +129,21 @@ export default {
           time:     'h:mm a'
         },
         labels: {
-          allDay:   'All day',
-          options:  'Options',
-          close:    'Close',
-          day:      ['day', 'days'],
-          days:     ['day', 'days'],
-          minute:   ['minute', 'minutes'],
-          minutes:  ['minute', 'minutes'],
-          hour:     ['hour', 'hours'],
-          hours:    ['hour', 'hours'],
-          week:     ['week', 'weeks'],
-          weeks:    ['week', 'weeks'],
-          second:   ['second', 'seconds'],
-          seconds:  ['second', 'seconds'],
-          busy:     'Busy',
-          free:     'Free'
+            allDay:   '全天',
+            options:  '操作',
+            close:    '关闭',
+            day:      ['天', '天'],
+            days:     ['天', '天'],
+            minute:   ['分钟', '分钟'],
+            minutes:  ['分钟', '分钟'],
+            hour:     ['小时', '小时'],
+            hours:    ['小时', '小时'],
+            week:     ['周', '周'],
+            weeks:    ['周', '周'],
+            second:   ['秒', '秒'],
+            seconds:  ['秒', '秒'],
+            busy:     '忙碌',
+            free:     '空闲'
         }
       },
       dsCalendarEventCreatePopover: {
@@ -152,66 +152,66 @@ export default {
           time:     'h:mm a'
         },
         labels: {
-          title:    'Add title',
-          allDay:   'All day',
-          close:    'Close',
-          save:     'Save',
-          day:      ['day', 'days'],
-          days:     ['day', 'days'],
-          minute:   ['minute', 'minutes'],
-          minutes:  ['minute', 'minutes'],
-          hour:     ['hour', 'hours'],
-          hours:    ['hour', 'hours'],
-          week:     ['week', 'weeks'],
-          weeks:    ['week', 'weeks'],
-          second:   ['second', 'seconds'],
-          seconds:  ['second', 'seconds'],
-          busy:     'Busy',
-          free:     'Free',
+          title:    '添加标题',
+          allDay:   '全天',
+          options:  '操作',
+          close:    '关闭',
+          day:      ['天', '天'],
+          days:     ['天', '天'],
+          minute:   ['分钟', '分钟'],
+          minutes:  ['分钟', '分钟'],
+          hour:     ['小时', '小时'],
+          hours:    ['小时', '小时'],
+          week:     ['周', '周'],
+          weeks:    ['周', '周'],
+          second:   ['秒', '秒'],
+          seconds:  ['秒', '秒'],
+          busy:     '忙碌',
+          free:     '空闲',
           location: '添加地址',
           description: 'Add description',
           calendar: 'Calendar',
         },
         busyOptions: [
-          {text: 'Busy'},
-          {text: 'Free'}
+          {text: '忙碌'},
+          {text: '空闲'}
         ]
       },
       dsSchedule: {
         labels: {
-          editCustom:   'Edit'
+          editCustom:   '编辑'
         }
       },
       dsEvent: {
         labels: {
-          moreActions:  'More actions...',
-          cancel:       'Cancel event changes',
-          save:         'Save',
-          title:        'Title',
-          exclusions:   'These are events or spans of time where a normally occurring event was excluded from the schedule. Events are excluded here if an event occurrence is moved.',
-          inclusions:   'These are events or spans of time where events were added outside the normally occurring schedule. Events are added here if an event occurrence is moved.',
-          cancelled:    'These are events or spans of time where events were cancelled.',
-          edit:         'Edit event',
-          add:          'Add event',
-          location:     'Add location',
-          description:  'Add description',
-          calendar:     'Calendar',
+          moreActions:  '更多操作。。。',
+          cancel:       '取消事件更改',
+          save:         '保存',
+          title:        '标题',
+          exclusions:   '这些是正常发生的事件从计划中排除的事件或时间跨度。如果移动事件发生，则在此处排除事件。',
+          inclusions:   '这些是事件或时间跨度，事件被添加到正常发生的计划之外。如果移动事件发生，则在此处添加事件。',
+          cancelled:    '这些是取消事件的事件或时间跨度',
+          edit:         '编辑事件',
+          add:          '添加事件',
+          location:     '添加地址',
+          description:  '添加描述',
+          calendar:     '行程表',
           tabs: {
-            details:    'Event Details',
-            forecast:   'Forecast',
-            removed:    'Removed',
-            added:      'Added',
-            cancelled:  'Cancelled'
+            details:    '事件详情',
+            forecast:   '预测',
+            removed:    '已删除',
+            added:      '已添加',
+            cancelled:  '已取消'
           }
         },
         busyOptions: [
-          {text: 'Busy'},
-          {text: 'Free'}
+          {text: '忙绿'},
+          {text: '空闲'}
         ]
       },
       dsScheduleActions: {
         labels: {
-          remove:     'Remove this event',
+          remove:     '移除这个事件',
           exclude:    'Remove this occurrence',
           cancel:     'Cancel this occurrence',
           uncancel:   'Undo cancellation',
@@ -284,7 +284,7 @@ export default {
   
       dsScheduleFrequencyWeek: {
         labels: {
-          type: 'Weeks'
+          type: '周'
         },
         options: [
           { text: 'Any week' },
@@ -307,7 +307,7 @@ export default {
   
       dsScheduleFrequencyYear: {
         labels: {
-          type: 'Years'
+          type: '年'
         },
         options: [
           { text: 'Any year' },
@@ -318,8 +318,8 @@ export default {
   
       dsScheduleSpan: {
         labels: {
-          startless:  'Beginning of Time',
-          endless:    'End of Time'
+          startless:  '开始时间',
+          endless:    '结束时间'
         },
         formats: {
           start:      'MMMM Do, YYYY',
@@ -329,8 +329,8 @@ export default {
   
       dsScheduleTime: {
         labels: {
-          remove:     'Remove time',
-          add:        'Add time'
+          remove:     '移除时刻',
+          add:        '添加时刻'
         }
       },
   
@@ -349,6 +349,7 @@ export default {
           months:     'months',
           second:     'second',
           seconds:    'seconds'
+          
         }
       },
   
@@ -360,8 +361,8 @@ export default {
   
       dsScheduleTypeCustomDialog: {
         labels: {
-          save:     'Save',
-          cancel:   'Cancel'
+          save:     '保存',
+          cancel:   '取消'
         }
       },
   
@@ -383,10 +384,10 @@ export default {
       },
   
       dsDayPicker: {
-        weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        weekdays: ['周日', '周一', '周二', '周三', '周四', '周五', '周六'],
         labels: {
-          prevMonth: 'Previous month',
-          nextMonth: 'Next month'
+          prevMonth: '上个月',
+          nextMonth: '下个月'
         }
       }
     }
