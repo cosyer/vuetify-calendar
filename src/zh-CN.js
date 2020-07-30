@@ -27,7 +27,7 @@ export default {
     { text: "深紫" },
     { text: "靛蓝" },
     { text: "蓝" },
-    { text: "胶水色" },
+    { text: "深蓝" },
     { text: "浅蓝" },
     { text: "青" },
     { text: "墨绿" },
