@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import DaySpanVuetify from "dayspan-vuetify";
 import App from "./App.vue";
-import zh from './zh-CN';
+import zh from "./zh-CN";
 
 import "vuetify/dist/vuetify.css";
 import "material-design-icons-iconfont/dist/material-design-icons.css";
@@ -18,8 +18,8 @@ Vue.use(DaySpanVuetify, {
   },
 });
 
-Vue.$dayspan.addLocales(['zh', 'zh-CN'], zh);
-Vue.$dayspan.setLocale('zh', true)
+Vue.$dayspan.addLocales(["zh", "zh-CN"], zh);
+Vue.$dayspan.setLocale("zh", true);
 
 new Vue({
   el: "#app",

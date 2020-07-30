@@ -3,18 +3,15 @@
     id="dayspan"
     v-cloak
   >
-
     <ds-calendar-app
       ref="app"
       :calendar="calendar"
       :read-only="readOnly"
       @change="saveState"
     >
-
       <template slot="title">
-        DaySpan
+        行程表
       </template>
-
       <template slot="menuRight">
         <v-btn
           icon
@@ -33,7 +30,6 @@
           </v-avatar>
         </v-btn>
       </template>
-
       <template
         slot="eventPopover"
         slot-scope="slotData"
@@ -44,7 +40,6 @@
           @finish="saveState"
         ></ds-calendar-event-popover>
       </template>
-
       <template
         slot="eventCreatePopover"
         slot-scope="{placeholder, calendar, close}"
@@ -57,7 +52,6 @@
           @create-popover-closed="saveState"
         ></ds-calendar-event-create-popover>
       </template>
-
       <template
         slot="eventTimeTitle"
         slot-scope="{calendarEvent, details}"
@@ -75,18 +69,15 @@
         </div>
         <div class="ds-ev-description">{{ getCalendarTime( calendarEvent ) }}</div>
       </template>
-
       <template slot="drawerBottom">
         <div class="pa-3">
           <v-checkbox
-            label="Read Only?"
+            label="只读"
             v-model="readOnly"
           ></v-checkbox>
         </div>
       </template>
-
     </ds-calendar-app>
-
   </v-app>
 </template>
 
