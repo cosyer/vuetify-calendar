@@ -16,7 +16,7 @@
         <v-btn
           icon
           large
-          href="https://github.com/ClickerMonkey/dayspan-vuetify"
+          href="https://github.com/cosyer/vuetify-calendar"
           target="_blank"
         >
           <v-avatar
