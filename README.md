@@ -1,4 +1,4 @@
-# canlendar-vuetify
+# vuetify-calendar
 
 基于[dayspan-vuetify](https://github.com/ClickerMonkey/dayspan-vuetify)的demo
 
